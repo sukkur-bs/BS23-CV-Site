@@ -103,44 +103,44 @@
 
         <div class="col-lg-9 col-8">
             <div class="card mb-2">
-                <div class="card-body row">
-                    <div class="col-md-5 col-12">
-                        <table class="table table-bordered">
-                            <thead class="table-primary">
-                            <tr>
-                                <th>Designation: Trainee</th>
-                                <th>Joining Date: 03-Jan-2022</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Lorem ipsum.</td>
-                                <td>Lorem ipsum dolor.</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="col-md-7 col-12">
-                        <h5 class="text-center">Hiring Summary</h5>
-
-                        <table class="table table-bordered">
-                            <thead class="table-primary">
-                            <tr>
-                                <th>Test Result</th>
-                                <th>Comment</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>Lorem ipsum dolor.</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, similique.</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                        <tr>
+                            <th>Designation: Trainee</th>
+                            <th>Joining Date: 03-Jan-2022</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Lorem ipsum.</td>
+                            <td>Lorem ipsum dolor.</td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
+            <div class="card mb-2">
+                <div class="card-body">
+                    <p class="text-primary me-1">Hiring Summary</p>
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                        <tr>
+                            <th>Test Result</th>
+                            <th>Comment</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor.</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, similique.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md-6">
 
