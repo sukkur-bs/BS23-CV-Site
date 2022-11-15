@@ -4,309 +4,349 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>BS23 | CV Site</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/mdb.min.css') }}"/>
+    <title>{{env('app_name')}}</title>
+
 
     <style>
-        body,
-        .table td,
-        .table th {
-            font-size: 13px;
+        @page { size: letter landscape; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
         }
+
+        body, html {
+            height: 100%;
+            font-family: sans-serif
+        }
+
 
         h5 {
             font-size: 16px;
         }
 
-        @media print {
-            .table td,
-            .table th {
-                font-size: 10px;
-                padding: .12rem .15rem;
-            }
+        .font-size-9 {
+            font-size: 11px;
+        }
 
-            .card-body {
-                padding: 8px;
-            }
+        .font-size-10 {
+            font-size: 10px;
+        }
 
-            .row {
-                margin-right: -10px;
-                margin-left: -10px;
-            }
+        .font-size-11 {
+            font-size: 11px;
+        }
+
+        .font-size-12 {
+            font-size: 12px;
+        }
+
+        .font-title {
+            font-size: 18px;
+        }
+
+        .float-right {
+            float: right;
+            text-align: right;
+        }
+
+        .float-left {
+            float: left;
+            text-align: left;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .border1 {
+            border: 1px solid;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        /* Default Table Style */
+        table {
+            color: #333;
+            background: white;
+            border: 1px solid grey;
+            font-size: 12pt;
+            border-collapse: collapse;
+        }
+
+        table thead th,
+        table tfoot th {
+            color: #777;
+            background: rgba(0, 0, 0, .1);
+        }
+
+        table caption {
+            padding: .2em;
+        }
+
+        table th,
+        table td {
+            padding: .2em;
+        }
+
+        /* Zebra Table Style */
+        [data-table-theme*=zebra] tbody tr:nth-of-type(odd) {
+            background: rgba(0, 0, 0, .05);
+        }
+
+        [data-table-theme*=zebra][data-table-theme*=dark] tbody tr:nth-of-type(odd) {
+            background: rgba(255, 255, 255, .05);
         }
     </style>
 </head>
-<body style="background-color: #eee;" onload="window.print()">
+<body style="">
+<table width="100%" border="0" style="padding: 8px;margin: 8px; border: none;">
+    <colgroup>
+        <col width="28%">
+        <col width="33%">
+        <col width="33%">
+    </colgroup>
+    <tr>
+        <td>
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                 alt="avatar"
+                 class="rounded-circle img-fluid" style="width: 160px;">
 
-<div class="container mt-1">
-    <div class="row">
-        <div class="col-lg-3 col-4">
-            <div class="card mb-2">
-                <div class="card-body text-center">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
-                         alt="avatar"
-                         class="rounded-circle img-fluid" style="width: 80px;">
-                    <h5 class="my-3">MD. Rakibul Islam(BS1065)</h5>
-                    <p class="text-muted mb-1">Trainee</p>
-                </div>
-            </div>
+            <h2 style="">MD. Rakibul Islam (BS1065)</h2>
+            <table width="100%" class="border1">
+                <tr>
+                    <td class="float-left">Designation:</td>
+                    <td class="float-right">Trainee</td>
+                </tr>
+                <tr>
+                    <td class="float-left">Joining Date:</td>
+                    <td class="float-right">3-Jan-22</td>
+                </tr>
+                <tr>
+                    <td class="float-left">Confirmation Date:</td>
+                    <td class="float-right">3-May-22</td>
+                </tr>
+                <tr>
+                    <td class="float-left">Years of Experiences:</td>
+                    <td class="float-right">0.25</td>
+                </tr>
+            </table>
 
-            <div class="card mb-2">
-                <div class="card-body">
-                    <p class="text-primary me-1">A. Performance Review</p>
+            <h4 class="font-title">A. Performance Review</h4>
+            <table style="width: 100%;" class="border1" table-layout="fixed">
 
-                    <table class="table table-bordered border-primary">
-                        <thead>
-                        <tr>
-                            <td>Expertise Area</td>
-                            <td>Asp.NET</td>
-                        </tr>
-                        </thead>
-                    </table>
-                </div>
-            </div>
-            <div class="card mb-2">
-                <div class="card-body">
-                    <p class="text-primary me-1">Project information</p>
+                <tbody>
 
-                    <table class="table table-bordered border-primary">
-                        <thead>
-                            <tr>
-                                <td>Expertise Area</td>
-                                <td>Asp.NET</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Expertise Area</td>
-                                <td>Asp.NET</td>
-                            </tr>
-                            <tr>
-                                <td>Expertise Area</td>
-                                <td>Asp.NET</td>
-                            </tr>
-                            <tr>
-                                <td>Expertise Area</td>
-                                <td>Asp.NET</td>
-                            </tr>
-                            <tr>
-                                <td>Expertise Area</td>
-                                <td>Asp.NET</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+                <tr>
+                    <td class="float-left">Expertise Area:</td>
+                    <td class="float-right">Asp.NET</td>
+                </tr>
+                <tr>
+                    <td class="float-left">Project Name:</td>
+                    <td class="float-right">Asp.NET</td>
+                </tr>
+                <tr>
+                    <td class="float-left">Project Duration:</td>
+                    <td class="float-right"></td>
+                </tr>
+                <tr>
+                    <td class="float-left">PM Name:</td>
+                    <td class="float-right">Md. Abdullah Bin Amin</td>
+                </tr>
+                <tr>
+                    <td class="float-left">SBU Name:</td>
+                    <td class="float-right">FinTech</td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width: 100%;" class="border1">
+                <thead class="border1">
+                <tr>
+                    <th class="float-left">Positive Notes</th>
+                    <th class="float-right">Improvement Area</th>
+                </tr>
+                </thead>
 
-        <div class="col-lg-9 col-8">
-            <div class="card mb-2">
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead class="table-primary">
-                        <tr>
-                            <th>Designation: Trainee</th>
-                            <th>Joining Date: 03-Jan-2022</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Lorem ipsum.</td>
-                            <td>Lorem ipsum dolor.</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                <tbody>
+                <tr>
+                    <td class="float-left">Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum.
+                    </td>
+                    <td class="float-right">Lorem ipsum dolor.<br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum.<br>Lorem
+                        ipsum.
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
-            <div class="card mb-2">
-                <div class="card-body">
-                    <p class="text-primary me-1">Hiring Summary</p>
-                    <table class="table table-bordered">
-                        <thead class="table-primary">
-                        <tr>
-                            <th>Test Result</th>
-                            <th>Comment</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Lorem ipsum dolor.</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, similique.</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+        </td>
+        <td style="vertical-align: top;">
+            <h5 class="font-title">B. Employee Evaluation</h5>
+            <table class="" style="width: 100%;border: 1px solid;" table-layout="fixed">
+                <thead class="">
+                <tr class="">
+                    <td valign="top" style="width:50%;font-size: 14px;">Tasks</td>
+                    <td valign="top" style="width:50%;font-size: 14px;" class="float-right">
+                        Status
+                    </td>
+                </tr>
+                </thead>
+                <tbody class="">
+                <tr class="">
+                    <td class="">Quality and accuracy of work (Clean Coding /
+                        QA/Support)
+                    </td>
+                    <td class="float-right">Satisfactory</td>
+                </tr>
+                <tr>
+                    <td class="">Efficiency</td>
+                    <td class="float-right">Improvement Required</td>
+                </tr>
+                <tr>
+                    <td class="">Maintaining Disciplined Timing</td>
+                    <td class="float-right">Improvement Required</td>
+                </tr>
+                <tr>
+                    <td class="">Adoptability</td>
+                    <td class="float-right">Improvement Required</td>
+                </tr>
+                <tr>
+                    <td class="">Work relationships (teamwork and interpersonal
+                        communication skills)
+                    </td>
+                    <td class="float-right">Improvement Required</td>
+                </tr>
+                <tr>
+                    <td class="">Competency in the role</td>
+                    <td class="float-right">Improvement Required</td>
+                </tr>
+                </tbody>
+            </table>
+            <p class="" style="margin-top: 12px;margin-bottom: 12px;"><b>PM Comment:</b><br>Lorem Ipsum is simply dummy
+                text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s,</p>
 
-            <div class="row">
-                <div class="col-md-6">
+            <table style="width: 100%;border: 1px solid;" table-layout="fixed">
+                <tbody>
+                <tr>
+                    <td class="">PM Recommendation</td>
+                    <td class="">Permanent</td>
+                </tr>
+                <tr>
+                    <td class="">PM Recommendation Reason</td>
+                    <td class="">m is n an u</td>
+                </tr>
 
-                    <div class="card mb-2 mb-md-0">
-                        <div class="card-body">
-                            <p class="text-primary me-1">B. Employee Evaluation</p>
+                <tr>
+                    <td class="">PM Name</td>
+                    <td class="">Md Abdullah Bin Amin</td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+        <td valign="top">
+            <h5 class="font-title">C. Salary Information</h5>
 
-                            <table class="table table-bordered border-primary">
-                                <colgroup>
-                                    <col width="50%">
-                                    <col width="50%">
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th valign="top">Tasks</th>
-                                        <th valign="top">Status(Excellent/Good/Satisfactory/Improvement Required)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>Tasks</th>
-                                        <td>Status(Excellent/Good/Satisfactory/Improvement Required)</td>
-                                    </tr><tr>
-                                        <th>Tasks</th>
-                                        <td>Status(Excellent/Good/Satisfactory/Improvement Required)</td>
-                                    </tr><tr>
-                                        <th>Tasks</th>
-                                        <td>Status(Excellent/Good/Satisfactory/Improvement Required)</td>
-                                    </tr><tr>
-                                        <th>Tasks</th>
-                                        <td>Status(Excellent/Good/Satisfactory/Improvement Required)</td>
-                                    </tr><tr>
-                                        <th>Tasks</th>
-                                        <td>Status(Excellent/Good/Satisfactory/Improvement Required)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            <table class="">
+                <colgroup>
+                    <col width="33%">
+                    <col width="33%">
+                    <col width="33%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th valign="top" class="">Salary Details</th>
+                    <th valign="top" class="">Level</th>
+                    <th valign="top" class="">Increment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
 
-                            <table class="mt-1 table table-bordered border-primary">
-                                <thead>
-                                <tr>
-                                    <td valign="middle">Mark the satisfaction level</td>
-                                    <td class="p-0" valign="middle">
-                                        <table class="table border-primary p-0 mb-0">
-                                            <thead>
-                                            <tr>
-                                                <th>Result (Extended / Permanent)</th>
-                                            </tr><tr>
-                                                <th>Permanent</th>
-                                            </tr>
-                                            </thead>
-                                        </table>
-                                    </td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>PM Signature</td>
-                                    <td></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-2 mb-md-0">
-                        <div class="card-body">
-                            <p class="text-primary me-1">C. Salary Information</p>
+                    <td class="">Current Salary</td>
+                    <th class="">NA</th>
+                    <th class="">NA</th>
+                </tr>
+                <tr>
+                    <td class="">Amount of salary revision (if any)</td>
+                    <th class="">ICI</th>
+                    <th class="">0</th>
+                </tr>
+                </tbody>
+            </table>
 
-                            <table class="table table-bordered border-primary">
-                                <colgroup>
-                                    <col width="33%">
-                                    <col width="33%">
-                                    <col width="33%">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th valign="top">Salary Details</th>
-                                    <th valign="top">Level</th>
-                                    <th valign="top">Increment</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
+            <table class="" style="width: 100%;margin-top: 16px; margin-bottom: 16px;">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td valign="middle" class="">Effective date of confirmation</td>
+                    <td valign="middle" class="">
 
-                                    <td>Current Salary</td>
-                                    <th>NA</th>
-                                    <th>NA</th>
-                                </tr>
-                                <tr>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="" width="100%" style="margin: 16px 0px;">
+                <thead>
+                <tr>
+                    <td valign="middle" class=""><b>Feedback by HR</b></td>
+                    <td valign="middle" class="">Recommendation by permanent role because
+                        of strong growth and
+                        performance
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td valign="" class=""><b>Signature</b></td>
+                    <td valign="" class="">S.M Sajibul Alam</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="mt-1 table table-bordered ">
+                <tbody>
+                <tr>
+                    <td valign="middle" class=""><b>Feedback by Board Panel</b></td>
+                    <td valign="middle" class="">RecommRecommendation by permanent role
+                        because of strong growth and
+                        performanceendation by permanent role because of strong growth and
+                        performance
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle" class=""><b>Decision By Panel</b></td>
+                    <td valign="middle" class=""><b style="font-size: 18px;">Permanent</b></td>
+                </tr>
+                <tr>
+                    <td valign="middle" class=""><b>Signature</b></td>
+                    <td valign="middle" class="">MD. Abdullah Bin Amin</td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="" width="100%" style="margin: 16px 0px;">
+                <colgroup>
+                    <col width="50%">
+                    <col width="50%">
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th valign="middle" colspan="2" style="text-align: center">Approval</th>
+                </tr>
 
-                                    <td>Amount of salary revision (if any)</td>
-                                    <th>ICI</th>
-                                    <th>0</th>
-                                </tr>
-                                </tbody>
-                            </table>
+                <tr>
+                    <th valign="bottom" class="" style="padding-top: 50px;">Masudur Rahman</th>
+                    <th valign="bottom" class="" style="padding-top: 50px;">Raisul Kabir</th>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
 
-                            <table class="mt-1 table table-bordered border-primary">
-                                <colgroup>
-                                    <col width="50%">
-                                    <col width="50%">
-                                </colgroup>
-                                <tbody>
-                                <tr>
-                                    <td valign="middle">Effective date of confirmation</td>
-                                    <td valign="middle">
-
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <table class="mt-1 table table-bordered border-primary">
-                                <thead>
-                                <tr>
-                                    <td valign="middle">Feedback by HR</td>
-                                    <td valign="middle"></td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th valign="middle">Signature</th>
-                                    <th valign="middle">S.M Sajibul Alam</th>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <table class="mt-1 table table-bordered border-primary">
-                                <tbody>
-                                    <tr>
-                                        <th valign="middle">Feedback by Board Panel</th>
-                                        <td valign="middle">Recommendation by permanent role because of strong growth and performance</td>
-                                    </tr>
-                                    <tr>
-                                        <th valign="middle">Decision By Panel</th>
-                                        <th valign="middle">(Permanent)</th>
-                                    </tr>
-                                    <tr>
-                                        <th valign="middle">Signature</th>
-                                        <td valign="middle">MD. Abdullah Bin Amin</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <table class="mt-1 table table-bordered border-primary">
-                                <colgroup>
-                                    <col width="50%">
-                                    <col width="50%">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <th valign="middle" colspan="2" style="text-align: center">Approval</th>
-                                    </tr>
-                                    <tr>
-                                        <th valign="bottom" class="pt-5 text-center">Masudur Rahman</th>
-                                        <th valign="bottom" class="pt-5 text-center">Raisul Kabir</th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script type="text/javascript" src="{{ asset('assets/js/mdb.min.js') }}"></script>
 </body>
 </html>
